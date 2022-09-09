@@ -157,6 +157,10 @@ hr {
     margin: 5px 20px;
 }
 
+.shadow {
+    box-shadow: 0px 5px 5px #707070;
+}
+
 .body .content .horizontal_island_no_outline {
     display: flex;
     flex-direction: row;
