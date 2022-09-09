@@ -77,7 +77,7 @@ body {
 .body {
     display: flex;
     flex-direction: row;
-    height: 100%;
+    min-height: 100%;
     overflow:hidden;
 }
 
@@ -90,7 +90,7 @@ body {
     min-width: 15%;
     max-width: 70px;
     text-align: center;
-    height: 100%;
+    min-height: 100%;
 }
 .body .content {
     flex-grow: 1;
@@ -170,6 +170,10 @@ hr {
     margin: 20px 20px 0;
 }
 
+.fixed {
+    position: fixed;
+}
+
 .body .content .vertical_island table {
     margin: 20px 20px;
     border-spacing: 15px;
@@ -226,4 +230,5 @@ hr {
 
 .body .fixed {
     position: fixed;
+    width: inherit;
 }
