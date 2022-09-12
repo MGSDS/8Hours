@@ -5,58 +5,30 @@
     <link href="styles/index.css" rel="stylesheet" type="text/css">
   </head>
 
-  <body>
-    <div class="topbar">
-      <div class="menu_icon">
-        <div class="row"></div>
-        <div class="row"></div>
-        <div class="row"></div>
-      </div>
-      <div class="logo">
-        <img src="img/logo/8Hours%20Small.png"/>
-      </div>
-      <div class="space"></div>
-      <blockquote>Как же я обожаю ***** css</blockquote>
-      <div class="space"></div>
-      <div class="profile">
-        <div class="text"> Kate </div>
-        <img src="img/avatar%20placeholder.jpg"/>
-      </div>
+  <header class="header">
+    <div class="menu-icon header__menu">
+      <div class="menu-icon__row menu-icon__row_size_s"></div>
+      <div class="menu-icon__row menu-icon__row_size_s"></div>
+      <div class="menu-icon__row menu-icon__row_size_s"></div>
     </div>
-    <div class="body">
-      <div class="navbar">
-        <div class="fixed">
-          <ul>
-            <li><a href="#Main">Main</a></li>
-            <li><a href="#Calendar">Calendar</a></li>
-          </ul>
-          <hr/>
-          <ul>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Goals">Goals</a></li>
-          </ul>
-        </div>
-        <div class="space"></div>
-        <div class="bottom_block">
-          <div class="info_island">
-            <div>Currently Tracking</div>
-            <div>Web</div>
-            <div>1:13</div>
-          </div>
-          <div class="small_logo">
-            <img src="img/logo/Hourglass%20Small.png"/>
-          </div>
-        </div>
-      </div>
-      <div class="content">
-          <div class="horizontal_island shadow" style="margin-top: 20px">
-            <input class="input element" id="TaskName" placeholder="Task Name" style="flex-grow: 5"/>
-            <input class="input element" id="ProjectName" placeholder="Project Name" style="flex-grow: 3"/>
-            <input class="input element" id="CategoryName" placeholder="Category Name" style="flex-grow: 1"/>
-            <input class="input element" id="HourPrice" placeholder="HourPrice" style="flex-grow: 1"/>
+    <img class="logo header__logo" src="img/logo/8Hours%20Small.png"/>
+    <div class="header__space"></div>
+    <div class="header__profile">
+      <div class="text header__profile_text text__size_m text_semi-bolt"> Kate </div>
+      <img class="header__profile-image" src="img/avatar%20placeholder.jpg"/>
+    </div>
+  </div>
+  </header>
+
+  <!-- <body class="body">
+          <div class="island body__island island_horizontal island_shadow island_round-20px">
+            <input class="input island__input island_round-20px" id="TaskName" placeholder="Task Name"/>
+            <input class="input island__input island_round-20px" id="ProjectName" placeholder="Project Name"/>
+            <input class="input island__input island_round-20px" id="CategoryName" placeholder="Category Name"/>
+            <input class="input island__input island_round-20px" id="HourPrice" placeholder="HourPrice"/>
             <button class="add_task_button element" style="flex-grow: 0">Start</button>
         </div>
-        <div class="vertical_island shadow">
+        <div class="island body__island island_vertical island_shadow island_round-20px">
           <div class="date_container"> Fri, June 13th 2077</div>
           <table>
             <tr>
@@ -104,83 +76,33 @@
           </table>
           <div class="text_container">Total time spent: 9:33 Total Income: $100</div>
         </div>
-        <div class="vertical_island shadow">
-          <div class="date_container"> Fri, June 13th 2077</div>
-          <table>
-            <tr>
-              <th>Task Name</th>
-              <th>Project Name</th>
-              <th>Category</th>
-              <th>Income</th>
-              <th>Time Spent</th>
-            </tr>
-            <tr class="outlined">
-              <td>Create Awesome UI</td>
-              <td>Web</td>
-              <td>Unpaid Job</td>
-              <td>0</td>
-              <td>1:30</td>
-            </tr>
-            <tr class="outlined">
-              <td>Create Awesome UI</td>
-              <td>Web</td>
-              <td>Unpaid Job</td>
-              <td>0</td>
-              <td>1:30</td>
-            </tr>
-            <tr class="outlined">
-              <td>Create Awesome UI</td>
-              <td>Web</td>
-              <td>Unpaid Job</td>
-              <td>0</td>
-              <td>1:30</td>
-            </tr>
-          </table>
-          <div class="text_container">Total time spent: 9:33 Total Income: $100</div>
-        </div>
-        <div class="vertical_island shadow">
-          <div class="date_container"> Fri, June 13th 2077</div>
-          <table>
-            <tr>
-              <th>Task Name</th>
-              <th>Project Name</th>
-              <th>Category</th>
-              <th>Income</th>
-              <th>Time Spent</th>
-            </tr>
-            <tr class="outlined">
-              <td>Create Awesome UI</td>
-              <td>Web</td>
-              <td>Unpaid Job</td>
-              <td>0</td>
-              <td>1:30</td>
-            </tr>
-            <tr class="outlined">
-              <td>Create Awesome UI</td>
-              <td>Web</td>
-              <td>Unpaid Job</td>
-              <td>0</td>
-              <td>1:30</td>
-            </tr>
-            <tr class="outlined">
-              <td>Create Awesome UI</td>
-              <td>Web</td>
-              <td>Unpaid Job</td>
-              <td>0</td>
-              <td>1:30</td>
-            </tr>
-            <tr class="outlined">
-              <td>Create Awesome UI</td>
-              <td>Web</td>
-              <td>Unpaid Job</td>
-              <td>0</td>
-              <td>1:30</td>
-            </tr>
-          </table>
-          <div class="text_container">Total time spent: 9:33 Total Income: $100</div>
-        </div>
-
-      </div>
-    </div>
   </body>
+
+  <nav class="nav">
+    <ul>
+      <li><a href="#Main">Main</a></li>
+      <li><a href="#Calendar">Calendar</a></li>
+    </ul>
+    <hr/>
+    <ul>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#Goals">Goals</a></li>
+    </ul>
+  </div>
+  <div class="space"></div>
+  <div class="bottom_block">
+    <div class="info_island">
+      <div>Currently Tracking</div>
+      <div>Web</div>
+      <div>1:13</div>
+    </div>
+    <div class="small_logo">
+      <img src="img/logo/Hourglass%20Small.png"/>
+    </div>
+  </nav>
+
+  <footer class="footer">
+    Aboba
+  </footer> -->
+
 </html>

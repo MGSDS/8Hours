@@ -1,0 +1,7 @@
+.header__profile {
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right:1em;
+}

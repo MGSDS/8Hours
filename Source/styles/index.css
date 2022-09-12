@@ -1,16 +1,31 @@
+@import 'header/header.css';
+@import 'logo/logo.css';
+@import 'menu-icon/menu-icon.css';
+@import 'text/text.css';
+@import 'text/text_semi-bolt.css';
+@import 'text/text_size_m.css';
+@import 'header/__logo/header__logo.css';
+@import 'header/__menu/header__menu.css';
+@import 'header/__profile/header__profile.css';
+@import 'header/__profile_image/header__profile-image.css';
+@import 'header/__profile_text/header__profile_text.css';
+@import 'header/__space/header__space.css';
+@import 'menu-icon/__row/menu-icon__row.css';
+@import 'menu-icon/__row/menu-icon__row_size_s.css';
+
+
 * {
-    font-family: "Segoe UI";
     /*outline: 2px solid red;*/
 }
 
-body {
+body{
     margin: 0;
     padding: 0;
 }
 
 /* Top Bar*/
 
-.topbar {
+/* .topbar {
     position: sticky;
     top: 0;
     display: flex;
@@ -23,7 +38,7 @@ body {
 
 .topbar .logo {
     padding: 5px;
-    height: inherit;
+    
     flex-grow: 0;
 }
 
@@ -59,22 +74,16 @@ body {
     margin-right: 20px;
 }
 
-.topbar .menu_icon {
-    border: none;
-    background-color: rgba(0,0,0,0);
-    padding: 5px;
-}
-
 .topbar .menu_icon .row {
     width: 30px;
     height: 3px;
     background-color: black;
     margin: 6px 0;
-}
+} */
 
 /*body*/
 
-.body {
+/* .body {
     display: flex;
     flex-direction: row;
     min-height: 100%;
@@ -232,7 +241,7 @@ hr {
 
     /*Other*/
 
-.body .fixed {
-    position: fixed;
-    width: inherit;
-}
+/*.body .fixed {*/
+/*    position: fixed;*/
+/*    width: inherit;*/
+/*}*/
