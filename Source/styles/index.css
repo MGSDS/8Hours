@@ -1,9 +1,16 @@
+@import 'body/body.css';
 @import 'header/header.css';
+@import 'island/island.css';
+@import 'island/island_horizontal.css';
+@import 'island/island_outline.css';
+@import 'island/island_shadow.css';
+@import 'island/island_vertical.css';
 @import 'logo/logo.css';
 @import 'menu-icon/menu-icon.css';
 @import 'text/text.css';
 @import 'text/text_semi-bolt.css';
 @import 'text/text_size_m.css';
+@import 'body/__island/body__island.css';
 @import 'header/__logo/header__logo.css';
 @import 'header/__menu/header__menu.css';
 @import 'header/__profile/header__profile.css';
@@ -12,6 +19,8 @@
 @import 'header/__space/header__space.css';
 @import 'menu-icon/__row/menu-icon__row.css';
 @import 'menu-icon/__row/menu-icon__row_size_s.css';
+
+
 
 
 * {
