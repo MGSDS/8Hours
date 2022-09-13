@@ -1,7 +1,23 @@
 .main {
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
     overflow-y: scroll;
     grid-area: main;
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding-top: 5px;
+}
+
+.main::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.main::-webkit-scrollbar-track {
+    background: #14191d;
+}
+
+.main::-webkit-scrollbar-thumb {
+    background-color: #398bcc;
+    border-radius: 20px;
 }

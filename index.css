@@ -1,7 +1,6 @@
 @import url("styles/body/body.css");
 @import url("styles/body/body_no-nav.css");
 @import url("styles/button/button.css");
-@import url("styles/fixed/fixed.css");
 @import url("styles/header/header.css");
 @import url("styles/island/island.css");
 @import url("styles/island/island_horizontal.css");
@@ -17,10 +16,12 @@
 @import url("styles/nav/nav_hidden.css");
 @import url("styles/table/table.css");
 @import url("styles/text/text.css");
+@import url("styles/text/text_grey.css");
 @import url("styles/text/text_semi-bolt.css");
 @import url("styles/text/text_size_l.css");
 @import url("styles/text/text_size_m.css");
 @import url("styles/text/text_size_s.css");
+@import url("styles/text/text_white.css");
 @import url("styles/text-box/text-box.css");
 @import url("styles/text-box/text-box_oultlined.css");
 @import url("styles/header/__logo/header__logo.css");
@@ -33,11 +34,11 @@
 @import url("styles/island/__input/island__input.css");
 @import url("styles/island/__table/island__table.css");
 @import url("styles/island/__text/island__text.css");
+@import url("styles/button/button_start-button.css");
 @import url("styles/main/__island/main__island.css");
 @import url("styles/menu/__item/menu__item.css");
 @import url("styles/menu-icon/__row/menu-icon__row.css");
 @import url("styles/menu-icon/__row/menu-icon__row_size_s.css");
-@import url("styles/nav/__fixed/nav__fixed.css");
 @import url("styles/nav/__menu/nav__menu.css");
 @import url("styles/nav/__separator/nav__separator.css");
 @import url("styles/table/__row/table__row.css");
@@ -45,6 +46,9 @@
 @import url("styles/table/__th/table__th_width_15.css");
 @import url("styles/table/__th/table__th_width_20.css");
 @import url("styles/table/__th/table__th_width_30.css");
+@import url("styles/text-box/text-box_dark.css");
+
+
 
 
 

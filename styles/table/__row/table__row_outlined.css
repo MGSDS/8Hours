@@ -1,4 +1,4 @@
 .table__row_outlined {
-    border-radius: 1em;
-    outline: 2px solid #707070;
+    border-radius: 0.15em;
+    outline: 0.1em solid #13191d;
 }

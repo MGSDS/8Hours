@@ -5,7 +5,7 @@
     "nav main";
     grid-template-columns: [nav] 10em;
     grid-template-rows: [head] 4em;
-    background-color: #CACACA;
+    background-color: #283238;
     height: 100vh;
     width: 100vw;
 }
