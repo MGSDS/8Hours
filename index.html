@@ -6,30 +6,10 @@
     <link href="index.css" rel="stylesheet" type="text/css">
     <script src="styles/header/__menu/hideNav.js"></script>
     <script src="styles/hideMenuOnResize.js" ></script>
+    <script src="layout.js"></script>
   </head>
 
-  <body id="body" class="body" onresize="hideMenuOnResize()">
-  <header class="header">
-    <div class="menu-icon header__menu" onclick="hideNav('nav', 'body')">
-      <div class="menu-icon__row menu-icon__row_size_s"></div>
-      <div class="menu-icon__row menu-icon__row_size_s"></div>
-      <div class="menu-icon__row menu-icon__row_size_s"></div>
-    </div>
-    <img class="logo header__logo" src="img/logo/8HoursDark%20Small.png"/>
-    <div class="header__space"></div>
-    <div class="header__profile">
-      <div class="text header__profile_text text__size_m text_semi-bolt text_white"> Kate </div>
-      <img class="header__profile-image" src="img/avatar%20placeholder.jpg"/>
-    </div>
-  </header>
-    <nav id="nav" class="nav nav__menu">
-      <ul class="menu">
-        <li class="menu__item"><a class="link text_semi-bolt text_size_l text_grey" href="#Main">Main</a></li>
-        <li class="menu__item"><a class="link text_semi-bolt text_size_l text_grey" href="#Calendar">Calendar</a></li>
-        <li class="menu__item"><a class="link text_semi-bolt text_size_l text_grey" href="#Projects">Projects</a></li>
-        <li class="menu__item"><a class="link text_semi-bolt text_size_l text_grey" href="#Goals">Goals</a></li>
-      </ul>
-    </nav>
+  <body id="body" class="body" onresize="hideMenuOnResize()" onload="createLayout()">
     <main class="main">
           <div class="island main__island island_horizontal island_shadow">
             <input class="text-box island__input text-box_dark" id="TaskName" placeholder="Task Name"/>

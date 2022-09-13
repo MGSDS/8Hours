@@ -1,0 +1,6 @@
+.grid-table_projects {
+    grid-template-areas: "ProjectName ProjectCategory EditBtn";
+    grid-template-columns: auto auto minmax(5%, 5em);
+    grid-template-rows: auto;
+    text-align: center;
+}

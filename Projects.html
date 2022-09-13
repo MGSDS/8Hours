@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>8Hours</title>
+        <meta charset="utf-8">
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <script src="styles/header/__menu/hideNav.js"></script>
+        <script src="styles/hideMenuOnResize.js" ></script>
+        <script src="layout.js"></script>
+    </head>
+
+    <body id="body" class="body" onresize="hideMenuOnResize()" onload="createLayout()">
+        <main class="main">
+            <div class="island main__island island_horizontal island_shadow">
+                <input class="text-box island__input text-box_dark" id="TaskName" placeholder="Project Name"/>
+                <button class="button island__button button_start-button text_size_s text_white">Start</button>
+            </div>
+            <div class="island main__island island_vertical island_shadow">
+                <div class="grid-table grid-table_projects island__table">
+                    <div class="grid-table__row">
+                        <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Project Name</div>
+                        <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Project Category</div>
+                        <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Edit</div>
+                    </div>
+                    <div class="grid-table__row island__table-row_padding">
+                        <div class="text text_size_s text_white island__text_table-row-element-margin">Web</div>
+                        <div class="text text_size_s text_white island__text_table-row-element-margin">Unpaid</div>
+                        <button class="button island__button button_edit-button text_size_s text_white">Edit</button>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
