@@ -1,0 +1,7 @@
+.island__button {
+    margin: 0.1em;
+    padding: 0.5em 1em;
+    background-color: #16CCCC;
+    border: none;
+    flex-grow: 0;
+}

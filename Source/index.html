@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <link href="styles/index.css" rel="stylesheet" type="text/css">
+    <script src="styles/header/__menu/hideNav.js"></script>
   </head>
 
+  <body id="body" class="body">
   <header class="header">
-    <div class="menu-icon header__menu">
+    <div class="menu-icon header__menu" onclick="hideNav('nav', 'body')">
       <div class="menu-icon__row menu-icon__row_size_s"></div>
       <div class="menu-icon__row menu-icon__row_size_s"></div>
       <div class="menu-icon__row menu-icon__row_size_s"></div>
@@ -17,89 +19,132 @@
       <div class="text header__profile_text text__size_m text_semi-bolt"> Kate </div>
       <img class="header__profile-image" src="img/avatar%20placeholder.jpg"/>
     </div>
-  </div>
   </header>
-
-  <body class="body">
-          <div class="island body__island island_horizontal island_shadow">
-            <input class="input island__input island_round-20px" id="TaskName" placeholder="Task Name"/>
-            <input class="input island__input island_round-20px" id="ProjectName" placeholder="Project Name"/>
-            <input class="input island__input island_round-20px" id="CategoryName" placeholder="Category Name"/>
-            <input class="input island__input island_round-20px" id="HourPrice" placeholder="HourPrice"/>
-            <button class="add_task_button element" style="flex-grow: 0">Start</button>
+    <nav id="nav" class="nav nav__menu">
+      <div class="fixed nav__fixed">
+      <ul class="menu">
+        <li class="menu__item"><a class="link text_semi-bolt text_size_l" href="#Main">Main</a></li>
+        <li class="menu__item"><a class="link text_semi-bolt text_size_l" href="#Calendar">Calendar</a></li>
+      </ul>
+      <hr/>
+      <ul class="menu">
+        <li class="menu__item"><a class="link text_semi-bolt text_size_l" href="#Projects">Projects</a></li>
+        <li class="menu__item"><a class="link text_semi-bolt text_size_l" href="#Goals">Goals</a></li>
+      </ul>
         </div>
-        <div class="island body__island island_vertical island_shadow">
-          <div class="date_container"> Fri, June 13th 2077</div>
-          <table>
-            <tr>
-              <th>Task Name</th>
-              <th>Project Name</th>
-              <th>Category</th>
-              <th>Income</th>
-              <th>Time Spent</th>
+    </nav>
+    <main class="main">
+          <div class="island main__island island_horizontal island_shadow">
+            <input class="text-box island__input text-box_outlined" id="TaskName" placeholder="Task Name"/>
+            <input class="text-box island__input text-box_outlined" id="ProjectName" placeholder="Project Name"/>
+            <input class="text-box island__input text-box_outlined" id="CategoryName" placeholder="Category Name"/>
+            <input class="text-box island__input text-box_outlined" id="HourPrice" placeholder="HourPrice"/>
+            <button class="button island__button text_size_s" style="flex-grow: 0">Start</button>
+        </div>
+        <div class="island main__island island_vertical island_shadow">
+          <div class="text island__text text_semi-bolt text_size_m"> Fri, June 13th 2077</div>
+          <table class="table island__table">
+            <tr class="table__row">
+              <th class="text text_semi-bolt text_size_m table__th_width_30">Task Name</th>
+              <th class="text text_semi-bolt text_size_m table__th_width_20">Project Name</th>
+              <th class="text text_semi-bolt text_size_m table__th_width_20">Category</th>
+              <th class="text text_semi-bolt text_size_m table__th_width_15">Income</th>
+              <th class="text text_semi-bolt text_size_m table__th_width_15">Time Spent</th>
             </tr>
-            <tr class="outlined">
-              <td>Create Awesome UI</td>
-              <td>Web</td>
-              <td>Unpaid Job</td>
-              <td>0</td>
-              <td>1:30</td>
-            </tr>
-            <tr class="outlined">
-              <td>Create Awesome UI</td>
-              <td>Web</td>
-              <td>Unpaid Job</td>
-              <td>0</td>
-              <td>1:30</td>
-            </tr>
-            <tr class="outlined">
-              <td>Create Awesome UI</td>
-              <td>Web</td>
-              <td>Unpaid Job</td>
-              <td>0</td>
-              <td>1:30</td>
-            </tr>
-            <tr class="outlined">
-              <td>Create Awesome UI</td>
-              <td>Web</td>
-              <td>Unpaid Job</td>
-              <td>0</td>
-              <td>1:30</td>
-            </tr>
-            <tr class="outlined">
-              <td>Create Awesome UI</td>
-              <td>Web</td>
-              <td>Unpaid Job</td>
-              <td>0</td>
-              <td>1:30</td>
+            <tr class="table__row table__row_outlined">
+              <td class="text text_size_m">Create Awesome UI</td>
+              <td class="text text_size_m">Web</td>
+              <td class="text text_size_m">Unpaid Job</td>
+              <td class="text text_size_m">0</td>
+              <td class="text text_size_m">1:30</td>
             </tr>
           </table>
-          <div class="text_container">Total time spent: 9:33 Total Income: $100</div>
+          <div class="text island__text text_size_m"><span class="text text_semi-bolt">Total time spent:</span> 9:33 <span class="text text_semi-bolt">Total Income:</span> $100</div>
         </div>
+          <div class="island main__island island_vertical island_shadow">
+            <div class="text island__text text_semi-bolt text_size_m"> Fri, June 13th 2077</div>
+            <table class="table island__table">
+              <tr class="table__row">
+                <th class="text text_semi-bolt text_size_m table__th_width_30">Task Name</th>
+                <th class="text text_semi-bolt text_size_m table__th_width_20">Project Name</th>
+                <th class="text text_semi-bolt text_size_m table__th_width_20">Category</th>
+                <th class="text text_semi-bolt text_size_m table__th_width_15">Income</th>
+                <th class="text text_semi-bolt text_size_m table__th_width_15">Time Spent</th>
+              </tr>
+              <tr class="table__row table__row_outlined">
+                <td class="text text_size_m">Create Awesome UI</td>
+                <td class="text text_size_m">Web</td>
+                <td class="text text_size_m">Unpaid Job</td>
+                <td class="text text_size_m">0</td>
+                <td class="text text_size_m">1:30</td>
+              </tr>
+              <tr class="table__row table__row_outlined">
+                <td class="text text_size_m">Create Awesome UI</td>
+                <td class="text text_size_m">Web</td>
+                <td class="text text_size_m">Unpaid Job</td>
+                <td class="text text_size_m">0</td>
+                <td class="text text_size_m">1:30</td>
+              </tr>
+            </table>
+            <div class="text island__text text_size_m"><span class="text text_semi-bolt">Total time spent:</span> 9:33 <span class="text text_semi-bolt">Total Income:</span> $100</div>
+          </div>
+      <div class="island main__island island_vertical island_shadow">
+        <div class="text island__text text_semi-bolt text_size_m"> Fri, June 13th 2077</div>
+        <table class="table island__table">
+          <tr class="table__row">
+            <th class="text text_semi-bolt text_size_m table__th_width_30">Task Name</th>
+            <th class="text text_semi-bolt text_size_m table__th_width_20">Project Name</th>
+            <th class="text text_semi-bolt text_size_m table__th_width_20">Category</th>
+            <th class="text text_semi-bolt text_size_m table__th_width_15">Income</th>
+            <th class="text text_semi-bolt text_size_m table__th_width_15">Time Spent</th>
+          </tr>
+          <tr class="table__row table__row_outlined">
+            <td class="text text_size_m">Create Awesome UI</td>
+            <td class="text text_size_m">Web</td>
+            <td class="text text_size_m">Unpaid Job</td>
+            <td class="text text_size_m">0</td>
+            <td class="text text_size_m">1:30</td>
+          </tr>
+          <tr class="table__row table__row_outlined">
+            <td class="text text_size_m">Create Awesome UI</td>
+            <td class="text text_size_m">Web</td>
+            <td class="text text_size_m">Unpaid Job</td>
+            <td class="text text_size_m">0</td>
+            <td class="text text_size_m">1:30</td>
+          </tr>
+        </table>
+        <div class="text island__text text_size_m"><span class="text text_semi-bolt">Total time spent:</span> 9:33 <span class="text text_semi-bolt">Total Income:</span> $100</div>
+      </div>
+      <div class="island main__island island_vertical island_shadow">
+        <div class="text island__text text_semi-bolt text_size_m"> Fri, June 13th 2077</div>
+        <table class="table island__table">
+          <tr class="table__row">
+            <th class="text text_semi-bolt text_size_m table__th_width_30">Task Name</th>
+            <th class="text text_semi-bolt text_size_m table__th_width_20">Project Name</th>
+            <th class="text text_semi-bolt text_size_m table__th_width_20">Category</th>
+            <th class="text text_semi-bolt text_size_m table__th_width_15">Income</th>
+            <th class="text text_semi-bolt text_size_m table__th_width_15">Time Spent</th>
+          </tr>
+          <tr class="table__row table__row_outlined">
+            <td class="text text_size_m">Create Awesome UI</td>
+            <td class="text text_size_m">Web</td>
+            <td class="text text_size_m">Unpaid Job</td>
+            <td class="text text_size_m">0</td>
+            <td class="text text_size_m">1:30</td>
+          </tr>
+          <tr class="table__row table__row_outlined">
+            <td class="text text_size_m">Create Awesome UI</td>
+            <td class="text text_size_m">Web</td>
+            <td class="text text_size_m">Unpaid Job</td>
+            <td class="text text_size_m">0</td>
+            <td class="text text_size_m">1:30</td>
+          </tr>
+        </table>
+        <div class="text island__text text_size_m"><span class="text text_semi-bolt">Total time spent:</span> 9:33 <span class="text text_semi-bolt">Total Income:</span> $100</div>
+      </div>
+    </main>
   </body>
 
-<!--  <nav class="nav">-->
-<!--    <ul>-->
-<!--      <li><a href="#Main">Main</a></li>-->
-<!--      <li><a href="#Calendar">Calendar</a></li>-->
-<!--    </ul>-->
-<!--    <hr/>-->
-<!--    <ul>-->
-<!--      <li><a href="#Projects">Projects</a></li>-->
-<!--      <li><a href="#Goals">Goals</a></li>-->
-<!--    </ul>-->
-<!--  </div>-->
-<!--  <div class="space"></div>-->
-<!--  <div class="bottom_block">-->
-<!--    <div class="info_island">-->
-<!--      <div>Currently Tracking</div>-->
-<!--      <div>Web</div>-->
-<!--      <div>1:13</div>-->
-<!--    </div>-->
-<!--    <div class="small_logo">-->
-<!--      <img src="img/logo/Hourglass%20Small.png"/>-->
-<!--    </div>-->
-<!--  </nav>-->
 
 <!--  <footer class="footer">-->
 <!--    Aboba-->

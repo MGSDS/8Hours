@@ -1,4 +1,5 @@
 .header {
+    grid-area: head;
     display: flex;
     flex-direction: row;
     position: sticky;

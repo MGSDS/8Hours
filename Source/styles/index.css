@@ -1,256 +1,55 @@
 @import 'body/body.css';
+@import 'button/button.css';
+@import 'fixed/fixed.css';
 @import 'header/header.css';
 @import 'island/island.css';
 @import 'island/island_horizontal.css';
 @import 'island/island_outline.css';
 @import 'island/island_shadow.css';
 @import 'island/island_vertical.css';
+@import 'link/link.css';
 @import 'logo/logo.css';
+@import 'main/main.css';
+@import 'menu/menu.css';
 @import 'menu-icon/menu-icon.css';
+@import 'nav/nav.css';
+@import 'table/table.css';
 @import 'text/text.css';
 @import 'text/text_semi-bolt.css';
+@import 'text/text_size_l.css';
 @import 'text/text_size_m.css';
-@import 'body/__island/body__island.css';
+@import 'text/text_size_s.css';
+@import 'text-box/text-box.css';
+@import 'text-box/text-box_oultlined.css';
 @import 'header/__logo/header__logo.css';
 @import 'header/__menu/header__menu.css';
 @import 'header/__profile/header__profile.css';
 @import 'header/__profile_image/header__profile-image.css';
 @import 'header/__profile_text/header__profile_text.css';
 @import 'header/__space/header__space.css';
+@import 'island/__button/island__button.css';
+@import 'island/__input/island__input.css';
+@import 'island/__table/island__table.css';
+@import 'island/__text/island__text.css';
+@import 'main/__island/main__island.css';
+@import 'menu/__item/menu__item.css';
 @import 'menu-icon/__row/menu-icon__row.css';
 @import 'menu-icon/__row/menu-icon__row_size_s.css';
-
-
+@import 'nav/__fixed/nav__fixed.css';
+@import 'nav/__menu/nav__menu.css';
+@import 'table/__row/table__row.css';
+@import 'table/__row/table__row_outlined.css';
+@import 'table/__th/table__th_width_15.css';
+@import 'table/__th/table__th_width_20.css';
+@import 'table/__th/table__th_width_30.css';
+@import 'header/__menu/header__menu.css';
 
 
 * {
-    /*outline: 2px solid red;*/
+    outline: 2px solid red;
 }
 
 body{
     margin: 0;
     padding: 0;
 }
-
-/* Top Bar*/
-
-/* .topbar {
-    position: sticky;
-    top: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    min-height: 50px;
-    background-color: #16CCCC;
-}
-
-.topbar .logo {
-    padding: 5px;
-    
-    flex-grow: 0;
-}
-
-.space {
-    flex-grow: 1;
-}
-
-.topbar .profile {
-    height: inherit;
-    flex-grow: 0;
-}
-
-.topbar .logo img {
-    max-height: 50px;
-}
-
-.topbar .profile img {
-    padding: 5px;
-    max-height: 40px;
-    border-radius: 50%;
-}
-
-.topbar .profile {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-}
-
-.topbar .profile .text {
-    flex-grow: 1;
-    size: 30pt;
-    font-weight: 600;
-    margin-right: 20px;
-}
-
-.topbar .menu_icon .row {
-    width: 30px;
-    height: 3px;
-    background-color: black;
-    margin: 6px 0;
-} */
-
-/*body*/
-
-/* .body {
-    display: flex;
-    flex-direction: row;
-    min-height: 100%;
-    overflow:hidden;
-}
-
-.body .navbar {
-    align-items: center;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    background-color: #949494;
-    min-width: 15%;
-    max-width: 70px;
-    text-align: center;
-    min-height: 100%;
-}
-.body .content {
-    flex-grow: 1;
-    background-color: #CACACA;
-}
-
-hr {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.body .navbar ul {
-    display: block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.body .navbar li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-.body .navbar li a:hover {
-    color: white;
-}
-
-.body .navbar .bottom_block {
-    display: flex;
-    flex-direction: column;
-    bottom: 0;
-    position: fixed;
-}
-
-.body .navbar .small_logo {
-    padding: 5px;
-    height: inherit;
-    flex-grow: 0;
-}
-
-.body .navbar .small_logo img {
-    max-height: 30px;
-    opacity: 50%;
-}
-
-.body .navbar .info_island {
-    display: flex;
-    flex-direction: column;
-    background-color: aliceblue;
-    outline: 2px solid #707070;
-    border-radius: 20px;
-    padding: 10px;
-}
-
-.body .content .horizontal_island {
-    display: flex;
-    flex-direction: row;
-    background-color: aliceblue;
-    outline: 2px solid #707070;
-    border-radius: 20px;
-    margin: 5px 20px;
-}
-
-.shadow {
-    box-shadow: 0px 5px 5px #707070;
-}
-
-.body .content .horizontal_island_no_outline {
-    display: flex;
-    flex-direction: row;
-    border-radius: 20px;
-    margin: 20px 20px;
-}
-
-.body .content .vertical_island .date_container {
-    font-weight: 500;
-    font-size: 15pt;
-    margin: 20px 20px 0;
-}
-
-.fixed {
-    position: fixed;
-}
-
-.body .content .vertical_island table {
-    margin: 20px 20px;
-    border-spacing: 15px;
-}
-
-.body .content .vertical_island table .outlined {
-    background-color: aliceblue;
-    outline: 2px solid #707070;
-    border-radius: 20px;
-    margin: 20px;
-    text-align: center;
-}
-
-.body .content .vertical_island {
-    display: flex;
-    flex-direction: column;
-    background-color: aliceblue;
-    outline: 2px solid #707070;
-    border-radius: 20px;
-    margin: 20px;
-}
-
-.body .content .vertical_island .text_container {
-    font-size: 15pt;
-    margin: 20px 10px;
-    margin-top: 0px;
-}
-
-.body .content .element {
-    margin: 5px;
-    border-radius: 20px;
-}
-
-.body .content .input {
-    font-size: max(16px, 1em);
-    font-family: inherit;
-    padding: 0.25em 0.5em;
-    background-color: #fff;
-    border: 2px solid #707070;
-}
-
-.body .content .add_task_button {
-    background-color: #16CCCC;
-    border: none;
-    color: black;
-    padding: 5px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-    /*Other*/
-
-/*.body .fixed {*/
-/*    position: fixed;*/
-/*    width: inherit;*/
-/*}*/

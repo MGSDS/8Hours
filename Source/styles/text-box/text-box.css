@@ -1,0 +1,7 @@
+.text-box {
+    padding: 0.25em 0.5em;
+    border-radius: 1.5em;
+    font-size: max(16px, 1em);
+    font-family: "Segoe UI";
+    border: 0;
+}

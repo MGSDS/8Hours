@@ -1,0 +1,6 @@
+.island__input {
+    margin: 0.1em;
+    padding: 0.25em 0.5em;
+    flex-grow: 5;
+    min-width: 3em;
+}
