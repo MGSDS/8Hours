@@ -1,0 +1,5 @@
+.body_no-nav {
+    grid-template-areas:
+    "head head"
+    "main main";
+}

@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <link href="styles/index.css" rel="stylesheet" type="text/css">
     <script src="styles/header/__menu/hideNav.js"></script>
+    <script src="styles/hideMenuOnResize.js" ></script>
   </head>
 
-  <body id="body" class="body">
+  <body id="body" class="body" onresize="hideMenuOnResize()">
   <header class="header">
     <div class="menu-icon header__menu" onclick="hideNav('nav', 'body')">
       <div class="menu-icon__row menu-icon__row_size_s"></div>
