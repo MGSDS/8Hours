@@ -1,0 +1,5 @@
+.grid-table_time-entries {
+    grid-template-areas: "TaskName ProjectName CategoryName Cost TimeSpent";
+    grid-template-rows: auto;
+    text-align: center;
+}

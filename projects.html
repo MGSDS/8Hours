@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>8Hours</title>
+    <meta charset="utf-8">
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <script src="styles/header/__menu/hideNav.js"></script>
+    <script src="styles/hideMenuOnResize.js" ></script>
+</head>
+
+<body id="body" class="body" onresize="hideMenuOnResize()">
+<header class="header">
+    <div class="menu-icon header__menu" onclick="hideNav('nav', 'body')">
+        <div class="menu-icon__row menu-icon__row_size_s"></div>
+        <div class="menu-icon__row menu-icon__row_size_s"></div>
+        <div class="menu-icon__row menu-icon__row_size_s"></div>
+    </div>
+    <img class="logo header__logo" src="img/logo/8HoursDark%20Small.png"/>
+    <div class="header__space"></div>
+    <div class="header__profile">
+        <div class="text header__profile_text text__size_m text_semi-bolt text_white"> Kate </div>
+        <img class="header__profile-image" src="img/avatar%20placeholder.jpg"/>
+    </div>
+</header>
+<nav id="nav" class="nav nav__menu">
+    <ul class="menu">
+        <li class="menu__item"><a class="link text_semi-bolt text_size_l text_grey" href="#Main">Main</a></li>
+        <li class="menu__item"><a class="link text_semi-bolt text_size_l text_grey" href="#Calendar">Calendar</a></li>
+        <li class="menu__item"><a class="link text_semi-bolt text_size_l text_grey" href="#Projects">Projects</a></li>
+        <li class="menu__item"><a class="link text_semi-bolt text_size_l text_grey" href="#Goals">Goals</a></li>
+    </ul>
+</nav>
+<main class="main">
+    <div class="island main__island island_horizontal island_shadow">
+        <input class="text-box island__input text-box_dark" id="ProjectName" placeholder="Project Name"/>
+        <input class="text-box island__input text-box_dark" id="CategoryName" placeholder="Category Name"/>
+        <button class="button island__button button_start-button text_size_s text_white">Add Project</button>
+    </div>
+    <div class="island main__island island_vertical island_shadow">
+        <div class="text island__text text_semi-bolt text_size_m text_white"> Projects </div>
+        <table class="table island__table">
+            <tr class="table__row">
+                <th class="text text_semi-bolt text_size_m text_white table__th_width_20">Project Name</th>
+                <th class="text text_semi-bolt text_size_m text_white table__th_width_20">Category</th>
+                <th class="text text_semi-bolt text_size_m text_white table__th_width_15">Edit Button</th>
+            </tr>
+            <tr class="table__row table__row_outlined">
+                <td class="text text_size_m text_white">Web</td>
+                <td class="text text_size_m text_white">Unpaid Job</td>
+                <td> <button class="button"> Edit </button> </td>
+            </tr>
+        </table>
+        <div class="text island__text text_size_m text_white"><span class="text text_semi-bolt">Total time spent:</span> 9:33 <span class="text text_semi-bolt">Total Income:</span> $100</div>
+    </div>
+</main>
+</body>
+</html>
