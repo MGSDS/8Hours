@@ -1,3 +1,11 @@
 .table__row {
     text-align: center;
 }
+
+.table__row:nth-child(even) {
+    background-color: #CACACA;
+}
+
+.table__row:nth-child(odd) {
+    background-color: aliceblue;
+}
