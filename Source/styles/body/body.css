@@ -1,0 +1,11 @@
+.body {
+    display: grid;
+    grid-template-areas:
+    "head head head"
+    "nav main main";
+    grid-template-columns: [nav] 10em;
+    grid-template-rows: [head] 4em;
+    background-color: #CACACA;
+    height: 100vh;
+    width: 100vw;
+}

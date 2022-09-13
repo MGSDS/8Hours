@@ -1,0 +1,11 @@
+.header {
+    grid-area: head;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    background-color: #16CCCC;
+}

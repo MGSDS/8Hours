@@ -1,0 +1,7 @@
+.menu__item {
+    align-items: center;
+    text-align: center;
+    display: block;
+    color: #000;
+    padding: 1em;
+}
