@@ -43,11 +43,12 @@
 @import 'table/__th/table__th_width_20.css';
 @import 'table/__th/table__th_width_30.css';
 @import 'header/__menu/header__menu.css';
+@import 'nav/__separator/nav__separator.css';
 
 
-* {
-    outline: 2px solid red;
-}
+/** {*/
+/*    outline: 2px solid red;*/
+/*}*/
 
 body{
     margin: 0;
