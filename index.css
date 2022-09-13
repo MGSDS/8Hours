@@ -1,0 +1,59 @@
+@import url("styles/body/body.css");
+@import url("styles/body/body_no-nav.css");
+@import url("styles/button/button.css");
+@import url("styles/fixed/fixed.css");
+@import url("styles/header/header.css");
+@import url("styles/island/island.css");
+@import url("styles/island/island_horizontal.css");
+@import url("styles/island/island_outline.css");
+@import url("styles/island/island_shadow.css");
+@import url("styles/island/island_vertical.css");
+@import url("styles/link/link.css");
+@import url("styles/logo/logo.css");
+@import url("styles/main/main.css");
+@import url("styles/menu/menu.css");
+@import url("styles/menu-icon/menu-icon.css");
+@import url("styles/nav/nav.css");
+@import url("styles/nav/nav_hidden.css");
+@import url("styles/table/table.css");
+@import url("styles/text/text.css");
+@import url("styles/text/text_semi-bolt.css");
+@import url("styles/text/text_size_l.css");
+@import url("styles/text/text_size_m.css");
+@import url("styles/text/text_size_s.css");
+@import url("styles/text-box/text-box.css");
+@import url("styles/text-box/text-box_oultlined.css");
+@import url("styles/header/__logo/header__logo.css");
+@import url("styles/header/__menu/header__menu.css");
+@import url("styles/header/__profile/header__profile.css");
+@import url("styles/header/__profile_image/header__profile-image.css");
+@import url("styles/header/__profile_text/header__profile_text.css");
+@import url("styles/header/__space/header__space.css");
+@import url("styles/island/__button/island__button.css");
+@import url("styles/island/__input/island__input.css");
+@import url("styles/island/__table/island__table.css");
+@import url("styles/island/__text/island__text.css");
+@import url("styles/main/__island/main__island.css");
+@import url("styles/menu/__item/menu__item.css");
+@import url("styles/menu-icon/__row/menu-icon__row.css");
+@import url("styles/menu-icon/__row/menu-icon__row_size_s.css");
+@import url("styles/nav/__fixed/nav__fixed.css");
+@import url("styles/nav/__menu/nav__menu.css");
+@import url("styles/nav/__separator/nav__separator.css");
+@import url("styles/table/__row/table__row.css");
+@import url("styles/table/__row/table__row_outlined.css");
+@import url("styles/table/__th/table__th_width_15.css");
+@import url("styles/table/__th/table__th_width_20.css");
+@import url("styles/table/__th/table__th_width_30.css");
+
+
+
+/** {*/
+/*    outline: 2px solid red;*/
+/*}*/
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
