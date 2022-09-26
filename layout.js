@@ -15,7 +15,7 @@ const header =
 const nav =
     "    <nav id=\"nav\" class=\"nav nav__menu\">\n" +
     "      <ul class=\"menu\">\n" +
-    "        <li id=\"Main\" class=\"menu__item\"><a class=\"link text_semi-bolt text_size_l text_grey\" href=\"/\">Main</a></li>\n" +
+    "        <li id=\"Main\" class=\"menu__item\"><a class=\"link text_semi-bolt text_size_l text_grey\" href=\"\">Main</a></li>\n" +
     "        <li id=\"Calendar\" class=\"menu__item\"><a class=\"link text_semi-bolt text_size_l text_grey\" href=\"Calendar\">Calendar</a></li>\n" +
     "        <li id=\"Projects\" class=\"menu__item\"><a class=\"link text_semi-bolt text_size_l text_grey\" href=\"Projects\">Projects</a></li>\n" +
     "      </ul>\n" +
