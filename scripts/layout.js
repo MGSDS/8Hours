@@ -27,7 +27,7 @@ const nav =
 
 const pageIds =
     {
-        '8Hours' : 'Main',
+        '' : 'Main',
         'Calendar' : 'Calendar',
         'Projects' : 'Projects'
     }
