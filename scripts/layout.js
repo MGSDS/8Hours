@@ -5,11 +5,11 @@ const header =
     "      <div class=\"menu-icon__row menu-icon__row_size_s\"></div>\n" +
     "      <div class=\"menu-icon__row menu-icon__row_size_s\"></div>\n" +
     "    </div>\n" +
-    "    <img class=\"logo header__logo\" src=\"img/logo/8HoursDark%20Small.png\"/>\n" +
+    "    <img class=\"logo header__logo\" src=\"../img/logo/8HoursDark%20Small.png\"/>\n" +
     "    <div class=\"header__space\"></div>\n" +
     "    <div class=\"header__profile\">\n" +
     "      <div class=\"text header__profile_text text__size_m text_semi-bolt text_white\"> Kate </div>\n" +
-    "      <img class=\"header__profile-image\" src=\"img/avatar%20placeholder.jpg\"/>\n" +
+    "      <img class=\"header__profile-image\" src=\"../img/avatar%20placeholder.jpg\"/>\n" +
     "    </div>\n" +
     "  </header>\n";
 const nav =
@@ -27,15 +27,19 @@ const nav =
 
 const pageIds =
     {
-       '8Hours' : 'Main',
-       'Calendar' : 'Calendar',
-       'Projects' : 'Projects'
+        '8Hours' : 'Main',
+        'Calendar' : 'Calendar',
+        'Projects' : 'Projects'
     }
 
 function createLayout() {
     document.body.innerHTML += header + nav;
+    selectCurrentNavPage();
+    let element = document.getElementById("LoadTimer");
+    loadTimer(element);
+}
+
+function selectCurrentNavPage(){
     let page = document.location.pathname.split('/').pop();
     document.getElementById(pageIds[page]).classList += ' menu__item_selected';
-    let element = document.getElementById('LoadTimer')
-    loadTimer(element);
 }
