@@ -19,6 +19,10 @@ const nav =
     "        <li id=\"Calendar\" class=\"menu__item\"><a class=\"link text_semi-bolt text_size_l text_grey\" href=\"Calendar\">Calendar</a></li>\n" +
     "        <li id=\"Projects\" class=\"menu__item\"><a class=\"link text_semi-bolt text_size_l text_grey\" href=\"Projects\">Projects</a></li>\n" +
     "      </ul>\n" +
+    "      <div class=\"nav__space\"></div>\n" +
+    "      <div class=\"nav__load-timer\">\n" +
+    "           <text id=\"LoadTimer\" class='text text_size_s text_grey'></text>\n" +
+    "      </div>\n" +
     "    </nav>";
 
 const pageIds =
@@ -32,5 +36,6 @@ function createLayout() {
     document.body.innerHTML += header + nav;
     let page = document.location.pathname.split('/').pop();
     document.getElementById(pageIds[page]).classList += ' menu__item_selected';
-    // document.getElementById('nav')
+    let element = document.getElementById('LoadTimer')
+    loadTimer(element);
 }

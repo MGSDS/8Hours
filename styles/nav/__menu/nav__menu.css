@@ -1,4 +1,5 @@
 .nav__menu {
+    flex-grow: 0;
     padding: 0;
     margin: 0;
 }

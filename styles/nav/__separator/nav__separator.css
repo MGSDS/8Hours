@@ -1,4 +1,5 @@
 .nav__separator {
+    flex-grow: 0;
     background-color: black;
     border: none;
     height: 0.1em;

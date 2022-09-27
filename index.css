@@ -54,6 +54,8 @@
 @import url("styles/table/__th/table__th_width_30.css");
 @import url("styles/button/button_edit-button.css");
 @import url("styles/grid-table/grid-table_projects.css");
+@import url("styles/nav/__load-timer/nav__load-timer.css");
+@import url("styles/nav/__space/nav__space.css");
 
 /** {*/
 /*    outline: 1px solid red;*/
