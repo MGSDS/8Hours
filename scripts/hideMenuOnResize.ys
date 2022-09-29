@@ -1,0 +1,25 @@
+// function hideMenuOnResize() {
+//     const x = window.matchMedia("(max-width: 65em)");
+//     if (x.matches) {
+//         document.getElementById("nav").classList.add("nav_hidden");
+//         document.getElementById("body").classList.add("body_no-nav");
+//     }
+//
+//     else {
+//         document.getElementById("nav").classList.remove("nav_hidden");
+//         document.getElementById("body").classList.remove("body_no-nav");
+//     }
+// }
+
+йопта hideMenuOnResize() жЫ
+    ясенХуй x внатуре ебало.феняНаШару("(max-width: 65em)") нахуй
+    вилкойвглаз (x.matches) жЫ
+        ксива.вычислитьЛохаПоНомеру("nav").classList.add("nav_hidden") нахуй
+        ксива.вычислитьЛохаПоНомеру("body").classList.add("body_no-nav") нахуй
+    есть
+
+    иливжопураз жЫ
+        ксива.вычислитьЛохаПоНомеру("nav").classList.remove("nav_hidden") нахуй
+        ксива.вычислитьЛохаПоНомеру("body").classList.remove("body_no-nav") нахуй
+    есть
+есть
