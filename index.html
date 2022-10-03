@@ -7,33 +7,27 @@
     <script src="scripts/loadTimer.js"></script>
     <script src="scripts/layout.js"></script>
     <script src="scripts/hideMenu.js"></script>
+    <script src="scripts/addTimeEntry.js"></script>
   </head>
 
   <body id="body" class="body">
       <main class="main">
-            <form class="island main__island island_horizontal island_shadow">
-              <input class="text-box island__input text-box_dark" id="TaskName" placeholder="Task Name"/>
-              <input class="text-box island__input text-box_dark" id="ProjectName" placeholder="Project Name"/>
-              <input class="text-box island__input text-box_dark" id="CategoryName" placeholder="Category Name"/>
-              <input class="text-box island__input text-box_dark" id="HourPrice" placeholder="Hour Price"/>
+            <form class="island main__island island_horizontal island_shadow" id="add-time-entry-form">
+              <input class="text-box island__input text-box_dark" id="task-name" placeholder="Task Name"/>
+              <input class="text-box island__input text-box_dark" id="project-name" placeholder="Project Name"/>
+              <input class="text-box island__input text-box_dark" id="category-name" placeholder="Category Name"/>
+              <input class="text-box island__input text-box_dark" id="hour-price" type="number" min="0" step="0.01" placeholder="Hour Price"/>
               <input type="submit" value="Start" class="button island__button button_start-button text_size_s text_white"/>
           </form>
           <div class="island main__island island_vertical island_shadow">
             <div class="text island__text text_semi-bolt text_size_l text_white"> Fri, June 13th 2077</div>
-            <div class="grid-table grid-table_time-entries island__table">
+            <div id="curr-day-grid" class="grid-table grid-table_time-entries island__table">  <!--FIXME: bullshit temp id-->
               <div class="grid-table__row">
                 <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Task Name</div>
                 <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Project Name</div>
                 <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Category</div>
                 <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Income</div>
                 <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Time Spent</div>
-              </div>
-              <div class="grid-table__row island__table-row_padding">
-                <div class="text text_size_s text_white island__text_table-row-element-margin">Create Awesome UI</div>
-                <div class="text text_size_s text_white island__text_table-row-element-margin">Web</div>
-                <div class="text text_size_s text_white island__text_table-row-element-margin">Unpaid Job</div>
-                <div class="text text_size_s text_white island__text_table-row-element-margin">0</div>
-                <div class="text text_size_s text_white island__text_table-row-element-margin">1:30</div>
               </div>
             </div>
             <div class="text island__text text_size_l text_white"><span class="text text_semi-bolt">Total time spent:</span> 9:33 <span class="text text_semi-bolt">Total Income:</span> $100</div>
