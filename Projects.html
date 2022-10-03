@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>8Hours</title>
-        <meta charset="utf-8">
-        <link href="index.css" rel="stylesheet" type="text/css">
-        <script src="scripts/hideNav.ys"></script>
-        <script src="scripts/hideMenuOnResize.ys" ></script>
-        <script src="scripts/layout.js"></script>
-    </head>
+<head>
+    <title>8Hours</title>
+    <meta charset="utf-8">
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <script src="scripts/loadTimer.js"></script>
+    <script src="scripts/layout.js"></script>
+    <script src="scripts/hideMenu.js"></script>
+</head>
 
-    <body id="body" class="body" onresize="hideMenuOnResize()" onload="createLayout()">
+<body id="body" class="body">
         <main class="main">
             <div class="island main__island island_horizontal island_shadow">
                 <input class="text-box island__input text-box_dark" id="TaskName" placeholder="Project Name"/>
@@ -26,7 +26,6 @@
                         <div class="text text_size_s text_white island__text_table-row-element-margin">Web</div>
                         <div class="text text_size_s text_white island__text_table-row-element-margin">Unpaid</div>
                         <button class="button island__button button_edit-button text_size_s text_white">Edit</button>
-
                     </div>
                 </div>
             </div>

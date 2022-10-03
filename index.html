@@ -4,43 +4,40 @@
     <title>8Hours</title>
     <meta charset="utf-8">
     <link href="index.css" rel="stylesheet" type="text/css">
-
     <script src="scripts/loadTimer.js"></script>
-    <script language="YoptaScript" src="scripts/hideNav.ys"></script>
-    <script language="YoptaScript" src="scripts/hideMenuOnResize.ys" ></script>
     <script src="scripts/layout.js"></script>
-    <script src="scripts/yopta.js"></script>
+    <script src="scripts/hideMenu.js"></script>
   </head>
 
-  <body id="body" class="body" onresize="hideMenuOnResize()" onload="createLayout()">
-    <main class="main">
-          <div class="island main__island island_horizontal island_shadow">
-            <input class="text-box island__input text-box_dark" id="TaskName" placeholder="Task Name"/>
-            <input class="text-box island__input text-box_dark" id="ProjectName" placeholder="Project Name"/>
-            <input class="text-box island__input text-box_dark" id="CategoryName" placeholder="Category Name"/>
-            <input class="text-box island__input text-box_dark" id="HourPrice" placeholder="HourPrice"/>
-            <button class="button island__button button_start-button text_size_s text_white">Start</button>
-        </div>
-        <div class="island main__island island_vertical island_shadow">
-          <div class="text island__text text_semi-bolt text_size_l text_white"> Fri, June 13th 2077</div>
-          <div class="grid-table grid-table_time-entries island__table">
-            <div class="grid-table__row">
-              <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Task Name</div>
-              <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Project Name</div>
-              <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Category</div>
-              <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Income</div>
-              <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Time Spent</div>
-            </div>
-            <div class="grid-table__row island__table-row_padding">
-              <div class="text text_size_s text_white island__text_table-row-element-margin">Create Awesome UI</div>
-              <div class="text text_size_s text_white island__text_table-row-element-margin">Web</div>
-              <div class="text text_size_s text_white island__text_table-row-element-margin">Unpaid Job</div>
-              <div class="text text_size_s text_white island__text_table-row-element-margin">0</div>
-              <div class="text text_size_s text_white island__text_table-row-element-margin">1:30</div>
-            </div>
+  <body id="body" class="body">
+      <main class="main">
+            <div class="island main__island island_horizontal island_shadow">
+              <input class="text-box island__input text-box_dark" id="TaskName" placeholder="Task Name"/>
+              <input class="text-box island__input text-box_dark" id="ProjectName" placeholder="Project Name"/>
+              <input class="text-box island__input text-box_dark" id="CategoryName" placeholder="Category Name"/>
+              <input class="text-box island__input text-box_dark" id="HourPrice" placeholder="HourPrice"/>
+              <button class="button island__button button_start-button text_size_s text_white">Start</button>
           </div>
-          <div class="text island__text text_size_l text_white"><span class="text text_semi-bolt">Total time spent:</span> 9:33 <span class="text text_semi-bolt">Total Income:</span> $100</div>
-        </div>
-    </main>
+          <div class="island main__island island_vertical island_shadow">
+            <div class="text island__text text_semi-bolt text_size_l text_white"> Fri, June 13th 2077</div>
+            <div class="grid-table grid-table_time-entries island__table">
+              <div class="grid-table__row">
+                <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Task Name</div>
+                <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Project Name</div>
+                <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Category</div>
+                <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Income</div>
+                <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Time Spent</div>
+              </div>
+              <div class="grid-table__row island__table-row_padding">
+                <div class="text text_size_s text_white island__text_table-row-element-margin">Create Awesome UI</div>
+                <div class="text text_size_s text_white island__text_table-row-element-margin">Web</div>
+                <div class="text text_size_s text_white island__text_table-row-element-margin">Unpaid Job</div>
+                <div class="text text_size_s text_white island__text_table-row-element-margin">0</div>
+                <div class="text text_size_s text_white island__text_table-row-element-margin">1:30</div>
+              </div>
+            </div>
+            <div class="text island__text text_size_l text_white"><span class="text text_semi-bolt">Total time spent:</span> 9:33 <span class="text text_semi-bolt">Total Income:</span> $100</div>
+          </div>
+      </main>
   </body>
 </html>
