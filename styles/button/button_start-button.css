@@ -3,3 +3,7 @@
     color: #f2f6f8;
     border-radius: 0.15em;
 }
+
+.button_start-button:hover{
+    background-color: #57a8ea;
+}
