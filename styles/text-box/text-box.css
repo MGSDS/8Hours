@@ -3,4 +3,5 @@
     font-size: max(16px, 1em);
     font-family: "Segoe UI";
     border: 0;
+    cursor: text;
 }

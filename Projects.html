@@ -6,26 +6,23 @@
     <link href="index.css" rel="stylesheet" type="text/css">
     <script src="scripts/loadTimer.js"></script>
     <script src="scripts/layout.js"></script>
+    <script src="scripts/addProject.js"></script>
     <script src="scripts/hideMenu.js"></script>
 </head>
 
 <body id="body" class="body">
         <main class="main">
-            <div class="island main__island island_horizontal island_shadow">
-                <input class="text-box island__input text-box_dark" id="TaskName" placeholder="Project Name"/>
-                <button class="button island__button button_start-button text_size_s text_white">Start</button>
-            </div>
+            <form id="project-add-form" class="island main__island island_horizontal island_shadow">
+                <input class="text-box island__input text-box_dark" id="project-name" placeholder="Project Name"/>
+                <input class="text-box island__input text-box_dark" id="category" placeholder="category"/>
+                <input type="submit" value="Add" class="button island__button button_start-button text_size_s text_white"/>
+            </form>
             <div class="island main__island island_vertical island_shadow">
-                <div class="grid-table grid-table_projects island__table">
+                <div class="grid-table grid-table_projects island__table" id="projects-list">
                     <div class="grid-table__row">
                         <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Project Name</div>
                         <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Project Category</div>
                         <div class="text text_semi-bolt text_size_m text_white island__text_table-row-element-margin">Edit</div>
-                    </div>
-                    <div class="grid-table__row island__table-row_padding">
-                        <div class="text text_size_s text_white island__text_table-row-element-margin">Web</div>
-                        <div class="text text_size_s text_white island__text_table-row-element-margin">Unpaid</div>
-                        <button class="button island__button button_edit-button text_size_s text_white">Edit</button>
                     </div>
                 </div>
             </div>
