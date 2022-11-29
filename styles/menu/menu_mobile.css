@@ -1,0 +1,13 @@
+.menu_mobile{
+    display: flex;
+    flex-direction: row;
+}
+.menu_mobile .menu__item{
+    flex: auto;
+    padding: 0;
+}
+
+.menu_mobile .menu__item_selected{
+    border-bottom: 0.3em solid #8fa3a5;
+    border-top: 0.3em solid transparent;
+}

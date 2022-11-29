@@ -15,13 +15,13 @@
         "  </header>\n";
     const nav =
         "    <nav id=\"nav\" class=\"nav nav__menu\">\n" +
-        "      <ul class=\"menu\">\n" +
+        "      <ul class=\"menu\" id=\"menu\">\n" +
         "        <li id=\"Main\" class=\"menu__item\"><a class=\"link text_semi-bolt text_size_l text_grey\" href=\"/8Hours\">Main</a></li>\n" +
         "        <li id=\"Calendar\" class=\"menu__item\"><a class=\"link text_semi-bolt text_size_l text_grey\" href=\"Calendar\">Calendar</a></li>\n" +
         "        <li id=\"Projects\" class=\"menu__item\"><a class=\"link text_semi-bolt text_size_l text_grey\" href=\"Projects\">Projects</a></li>\n" +
         "      </ul>\n" +
-        "      <div class=\"nav__space\"></div>\n" +
-        "      <div class=\"nav__load-timer\">\n" +
+        "      <div class=\"nav__space\" id=\"nav-space\"></div>\n" +
+        "      <div class=\"nav__load-timer\" id=\"nav-load-timer\">\n" +
         "           <text id=\"load-timer\" class='text text_size_s text_grey'></text>\n" +
         "      </div>\n" +
         "    </nav>";
@@ -48,6 +48,6 @@
         document.getElementById(pageIds[page]).classList += ' menu__item_selected';
     }
 
-    document.addEventListener("DOMContentLoaded", _ => createLayout())
+    createLayout();
     document.addEventListener("layoutCreated", _=>selectCurrentNavPage())
 }();

@@ -1,0 +1,7 @@
+.body_mobile {
+    grid-template-areas:
+    "head"
+    "nav"
+    "main";
+    grid-template-columns: [nav] auto;
+}

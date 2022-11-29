@@ -56,7 +56,13 @@
 @import url("styles/grid-table/grid-table_projects.css");
 @import url("styles/nav/__load-timer/nav__load-timer.css");
 @import url("styles/nav/__space/nav__space.css");
-@import url("styles/body/__wrapper/body__wrapper.css");
+@import url("styles/lds-ripple/lds-ripple.css");
+@import url("styles/lds-ripple/lds-ripple_hidden.css");
+@import url("styles/body/body_mobile.css");
+@import url("styles/body/body_mobile.css");
+@import url("styles/menu/menu_mobile.css");
+@import url("styles/nav/__load-timer/nav__load-timer_mobile.css");
+@import url("styles/nav/__space/nav__space_mobile.css");
 
 /** {*/
 /*    outline: 1px solid red;*/
