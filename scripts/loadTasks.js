@@ -1,4 +1,4 @@
-const url = "https://fakerapi.it/api/v1/custom?_quantity=100&id=counter&projectName=firstName&elapsedTime=number&income=number&date=date_time&taskName=firstName&categoryName=firstName";
+const url = "https://fakerapi.it/api/v1/custom?_quantity=10&id=counter&projectName=firstName&elapsedTime=number&income=number&date=date_time&taskName=firstName&categoryName=firstName";
 
 const island =
     "          <div class=\"island main__island island_vertical island_shadow\">\n" +
@@ -39,17 +39,23 @@ function fetchEntries() {
     .then(function(response) {
         if (!response.ok) {
             showError('Server responded with ' + response);
-            console.log('Invalid response: ' + response);
+            console.error('Invalid response: ' + response);
 
         }
         return response.json();
     },
         function(result) {
         showError('Failed to fetch data from server. Check your internet connection and try agan later');
-        console.log('Promise rejected: ' + result);
+        console.error('Promise rejected: ' + result);
         }
     ).then(function(data) {
-        showInDom(data.data);
+        try {
+            showInDom(data.data);
+        }
+        catch(e) {
+            showError('Что-то пошло не так...');
+            throw e;
+        }
     });
 }
 
@@ -67,17 +73,44 @@ function showError(message){
 
 
 function showInDom(data) {
-    let today = new Date();
 
-    let stats = {
-        timeSpent: 0,
-        income: 0
-    };
-    let entries = data;
+    let groupedEntries = data.reduce((groupedEntries, entry) => {
+        const date = new Date(entry.date.date);
+        if (!groupedEntries[date]) {
+            groupedEntries[date] = [];
+        }
+        groupedEntries[date].push(entry);
+        return groupedEntries;
+    }, {});
+
+    groupedEntries = Object.keys(groupedEntries).map((date) => {
+        let stats = {
+            timeSpent: 0,
+            income: 0
+        };
+
+        groupedEntries[date].forEach(el => {
+            stats.timeSpent += el.timeSpent;
+            stats.income += el.income;
+        })
+
+        return {
+            date,
+            entries: groupedEntries[date],
+            stats: stats,
+        };
+    });
+
+    groupedEntries = groupedEntries.sort((a, b) => b.date - a.date);
+
     let main = document.getElementById('main');
-    let island = createIsland(today.toDateString(), entries, stats);
     disableLoadingAnimation();
-    main.append(island);
+    groupedEntries.forEach(el => {
+
+        let island = createIsland(el.date.toString(), el.entries, el.stats);
+        main.append(island);
+    })
+    // main.append(island);
 }
 
 function createIsland(date, entries, stats) {
