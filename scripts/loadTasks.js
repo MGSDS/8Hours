@@ -24,7 +24,6 @@ const entry =
     "                <div class=\"text text_semi-bolt text_size_m text_white island__text_table-row-element-margin\">time</div>\n" +
     "              </div>\n";
 
-
 function disableLoadingAnimation(){
     document.getElementById("loading").classList.add("lds-ripple_hidden");
 }
@@ -39,13 +38,30 @@ function fetchEntries() {
     fetch(url, requestInit)
     .then(function(response) {
         if (!response.ok) {
-            alert("Error: can not fetch data from server");
-            throw Error(response.statusText);
+            showError('Server responded with ' + response);
+            console.log('Invalid response: ' + response);
+
         }
         return response.json();
-    }).then(function(data) {
+    },
+        function(result) {
+        showError('Failed to fetch data from server. Check your internet connection and try agan later');
+        console.log('Promise rejected: ' + result);
+        }
+    ).then(function(data) {
         showInDom(data.data);
     });
+}
+
+function showError(message){
+    let main = document.getElementById('main');
+    let error = document.createElement("div");
+    error.classList.add("bar");
+    error.classList.add("error");
+    error.classList.add("main__error");
+    error.innerHTML = message;
+    disableLoadingAnimation();
+    main.append(error);
 }
 
 

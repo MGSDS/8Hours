@@ -63,6 +63,8 @@
 @import url("styles/menu/menu_mobile.css");
 @import url("styles/nav/__load-timer/nav__load-timer_mobile.css");
 @import url("styles/nav/__space/nav__space_mobile.css");
+@import url("styles/error/error.css");
+@import url("styles/main/__error/main__error.css");
 
 /** {*/
 /*    outline: 1px solid red;*/
